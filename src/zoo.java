@@ -1,8 +1,13 @@
 public class zoo {
     public static void main(String[] args) {
         zoo z = new zoo();
-        z.sleep("Tigger");
-
+        z.eat("Tiger", "meat");
+        z.sleep("Tiger");
+        z.eat("Tiger", "bacon");
+        Tiger tigger = new Tiger("Tigger");
+        tigger.eat("meat");
+        tigger.eat("kibble");
+        tigger.sleep();
     }
 
 
@@ -14,7 +19,12 @@ public class zoo {
 
     public void eat(String name, String food){
         if ( food == favoriteFood){
-            System.out.println(name + " eats " + food + "YUM!!!" + name + );
+            System.out.println(name + " eats " + food);
+            System.out.println("YUM!!! " + name + " wants more " + food);
+        }else{
+            System.out.println(name + " eats " + food);
         }
     }
 }
+
+
