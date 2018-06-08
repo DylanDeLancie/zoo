@@ -1,13 +1,11 @@
 public class zoo {
     public static void main(String[] args) {
-        zoo z = new zoo();
-        z.eat("Tiger", "meat");
-        z.sleep("Tiger");
-        z.eat("Tiger", "bacon");
         Tiger tigger = new Tiger("Tigger");
         tigger.eat("meat");
         tigger.eat("kibble");
-        tigger.sleep();
+        Bear pooh = new Bear("Pooh");
+     pooh.eat("fish");
+        pooh.eat("meat");
     }
 
 
@@ -23,6 +21,7 @@ public class zoo {
             System.out.println("YUM!!! " + name + " wants more " + food);
         }else{
             System.out.println(name + " eats " + food);
+
         }
     }
 }

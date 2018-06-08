@@ -1,4 +1,12 @@
-public class Bear {
+public class Bear extends Animal {
     String name;
     String favoriteFood;
+
+    public Bear(String name) {
+      super(name, "fish");
+    }
+    public void sleep() {
+        System.out.println(name + " hibernates for 4 months");
+    }
+
 }
